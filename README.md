@@ -1,3 +1,3 @@
 # PulsoPH
 
-Project/Solution for Pulso PH Mobile App.
+Project/Solution for PulsoPH Client Mobile App.
