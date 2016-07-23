@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PulsoPH.Client.Views.Emergency.AddEmergencyRainPage"
+             BackgroundColor="#E0F4C3"
+              xmlns:userControls="clr-namespace:PulsoPH.Client.UserControls;assembly=PulsoPH.Client"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             xmlns:xlabcontrols="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             BindingContext="{Binding [MasterPageViewModel],Source={StaticResource ViewModelLocator} ">
+
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness">
+      <OnPlatform.iOS>
+        0, 20, 0, 0
+      </OnPlatform.iOS>
+      <OnPlatform.Android>
+        0, 0, 0, 0
+      </OnPlatform.Android>
+      <OnPlatform.WinPhone>
+        0, 0, 0, 0
+      </OnPlatform.WinPhone>
+    </OnPlatform>
+  </ContentPage.Padding>
+
+  <Grid RowSpacing="0">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+
+    <Grid Grid.Row="0" Grid.RowSpan="2" VerticalOptions="FillAndExpand" Padding="20,10" RowSpacing="0" >
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+
+      <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid VerticalOptions="Fill" HorizontalOptions="Fill">
+          <Image Source="ic_rain_heavy.png" HeightRequest="75" WidthRequest="75" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.RowSpan="4"/>
+        </Grid>
+        <userControls:CustomLabel Grid.Row="1" Text="Rain Storm" FontFamilyName="Roboto" TextColor="Gray" FontSize="18" FontAttributes="None" VerticalOptions="Start" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+
+      </Grid>
+
+      <Grid Grid.Row="1" Padding="50,0">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid  RowSpacing="0" VerticalOptions="FillAndExpand">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+          </Grid.RowDefinitions>
+
+          <Grid VerticalOptions="Fill" HorizontalOptions="Fill">
+            <Image Source="ic_rain_heavy.png" HeightRequest="50" WidthRequest="50" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.RowSpan="4"/>
+          </Grid>
+          <Grid Grid.Row="1" VerticalOptions="Fill">
+            <userControls:CustomLabel Text="Heavy" FontFamilyName="Roboto" TextColor="Gray" FontSize="12" FontAttributes="None" VerticalOptions="Start" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+          </Grid>
+        </Grid>
+
+        <Grid Grid.Column="1" VerticalOptions="FillAndExpand">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+          </Grid.RowDefinitions>
+
+          <Grid RowSpacing="0" VerticalOptions="Fill" HorizontalOptions="Fill">
+            <Image Source="ic_rain_moderate.png" HeightRequest="50" WidthRequest="50" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.RowSpan="4"/>
+          </Grid>
+          <Grid Grid.Row="1" VerticalOptions="Fill">
+            <userControls:CustomLabel Text="Intense " FontFamilyName="Roboto" TextColor="Gray" FontSize="12" FontAttributes="None" VerticalOptions="Start" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+          </Grid>
+        </Grid>
+
+        <Grid Grid.Column="2" VerticalOptions="FillAndExpand">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+          </Grid.RowDefinitions>
+
+          <Grid RowSpacing="0"  VerticalOptions="Fill" HorizontalOptions="Fill">
+            <Image Source="ic_rain_tolerate.png" HeightRequest="50" WidthRequest="50" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.RowSpan="4"/>
+          </Grid>
+          <Grid Grid.Row="1" VerticalOptions="Fill">
+            <userControls:CustomLabel Text="Torential" FontFamilyName="Roboto" TextColor="Gray" FontSize="12" FontAttributes="None" VerticalOptions="Start" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+          </Grid>
+        </Grid>
+
+      </Grid>
+
+      <StackLayout Grid.Row="2" Spacing="0">
+        <userControls:CustomLabel Text="Description" FontFamilyName="Roboto" TextColor="#333333" FontSize="12" FontAttributes="None" VerticalOptions="Start" HorizontalOptions="StartAndExpand"/>
+        <userControls:CustomEntry x:Name="entryDescription" Placeholder="Description" Text="" FontSize="14" Grid.Column="1" FontFamilyName="Roboto-Light" TextColor="#333333" HintTextColor="#333333" VerticalOptions="Start" HorizontalTextAlignment="Start" />
+      </StackLayout>
+    </Grid>
+
+    <Grid Grid.Row="2" Grid.RowSpan="2" VerticalOptions="FillAndExpand" BackgroundColor="#E0F4C3" RowSpacing="0" >
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+
+      <Grid BackgroundColor="#EBE373">
+
+      </Grid>
+
+
+      <Grid BackgroundColor="#E0F4C3" Grid.Row="1">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid VerticalOptions="Fill" Padding="20,10">
+          <userControls:CustomLabel Text="Help Needed" FontFamilyName="Roboto" TextColor="#FC5D53" FontSize="18" FontAttributes="None" VerticalOptions="Start" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
+
+          <Grid Grid.Row="1">
+            
+          </Grid>
+        </Grid>
+
+      </Grid>
+
+    </Grid>
+
+
+    <Grid Grid.Row="0" RowSpacing="0" BackgroundColor="Transparent">
+      <Grid Padding="0,0,-5,0">
+        <xlabcontrols:ImageButton Text="" BackgroundColor="Transparent" FontSize="0" TextColor="#ffffff" HeightRequest="50" WidthRequest="50" Source="ic_keyboard_backspace_white_48dp.png" Command="{Binding BackCommand}" Orientation="ImageOnTop" ImageHeightRequest="70" ImageWidthRequest="70" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" />
+      </Grid>
+    </Grid>
+
+  </Grid>
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PulsoPH.Client.Views.BaseContentLoginPage"
+             Title="MainPage"
+              xmlns:userControls="clr-namespace:PulsoPH.Client.UserControls;assembly=PulsoPH.Client"
+             xmlns:xlabcontrols="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms">
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <Image Source="basebackground.png" Aspect="AspectFill" Grid.RowSpan="4"/>
+
+    <Grid  Grid.Row="2" Padding="20,0">
+        <xlabcontrols:ImageButton Text="Facebook" BackgroundColor="#3D5A98" FontSize="12" TextColor="White" Grid.Row="2"
+                       HeightRequest="100" 
+                       Source="ic_facebook.png" Command="{Binding LoginCommand}"
+                       Orientation="ImageToLeft"
+                       ImageHeightRequest="50"
+                       ImageWidthRequest="50" HorizontalOptions="Center" VerticalOptions="End" />
+
+    </Grid>
+  
+
+    <Grid VerticalOptions="FillAndExpand" BackgroundColor="#FFCC66" IsVisible="{Binding IsLoading}" Grid.RowSpan="4">
+      <busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="ECG" Title="Authenticating your account..." TextColor="#DC5563" TextSize="32" ViewBoxWidth="100" ViewBoxHeight="100" HorizontalOptions="Fill" />
+    </Grid>
+  </Grid>
+</ContentPage>

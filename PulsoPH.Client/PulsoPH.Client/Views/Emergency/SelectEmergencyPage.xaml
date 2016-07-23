@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PulsoPH.Client.Views.Emergency.SelectEmergencyPage"
+             BackgroundColor="#99CC99"
+             xmlns:userControls="clr-namespace:PulsoPH.Client.UserControls;assembly=PulsoPH.Client"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             xmlns:xlabcontrols="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             BindingContext="{Binding [MasterPageViewModel],Source={StaticResource ViewModelLocator} ">
+
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness">
+      <OnPlatform.iOS>
+        0, 20, 0, 0
+      </OnPlatform.iOS>
+      <OnPlatform.Android>
+        0, 0, 0, 0
+      </OnPlatform.Android>
+      <OnPlatform.WinPhone>
+        0, 0, 0, 0
+      </OnPlatform.WinPhone>
+    </OnPlatform>
+  </ContentPage.Padding>
+
+  <Grid RowSpacing="0">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+    
+    <Grid Grid.Row="0" Grid.RowSpan="2" VerticalOptions="FillAndExpand" RowSpacing="0" >
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+
+      <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#99CC99">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1.5*"/>
+          <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid VerticalOptions="Fill" HorizontalOptions="Fill" Padding="10">
+          <Image Source="ic_rain_heavy.png" HeightRequest="75" WidthRequest="75" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.RowSpan="4"/>
+        </Grid>
+        <Grid VerticalOptions="CenterAndExpand" Grid.Column="1" HorizontalOptions="Start">
+          <userControls:CustomLabel  VerticalOptions="CenterAndExpand" HorizontalOptions="Start" Text="Rain Storm" FontFamilyName="Roboto-Light" TextColor="White" FontSize="18" FontAttributes="None" />
+        </Grid>
+      </Grid>
+
+      <Grid Grid.Row="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#EBE373">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1.5*"/>
+          <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid VerticalOptions="Fill" HorizontalOptions="Fill" Padding="10">
+          <Image Source="ic_rain_heavy.png" HeightRequest="75" WidthRequest="75" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" Grid.RowSpan="4"/>
+        </Grid>
+        <Grid VerticalOptions="CenterAndExpand" Grid.Column="1" HorizontalOptions="Start">
+          <userControls:CustomLabel  VerticalOptions="CenterAndExpand" HorizontalOptions="Start" Text="Fire" FontFamilyName="Roboto-Light" TextColor="White" FontSize="18" FontAttributes="None" />
+        </Grid>
+      </Grid>
+
+      <Grid Grid.Row="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#F8D323">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1.5*"/>
+          <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid VerticalOptions="Fill" HorizontalOptions="Fill" Padding="10">
+          <Image Source="ic_rain_heavy.png" HeightRequest="75" WidthRequest="75" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" Grid.RowSpan="4"/>
+        </Grid>
+        <Grid VerticalOptions="CenterAndExpand" Grid.Column="1" HorizontalOptions="Start">
+          <userControls:CustomLabel  VerticalOptions="CenterAndExpand" HorizontalOptions="Start" Text="Flood" FontFamilyName="Roboto-Light" TextColor="White" FontSize="18" FontAttributes="None" />
+        </Grid>
+      </Grid>
+
+      <Grid Grid.Row="3" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#FC5D53">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1.5*"/>
+          <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid VerticalOptions="Fill" HorizontalOptions="Fill" Padding="10">
+          <Image Source="ic_rain_heavy.png" HeightRequest="75" WidthRequest="75" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" Grid.RowSpan="4"/>
+        </Grid>
+        <Grid VerticalOptions="CenterAndExpand" Grid.Column="1" HorizontalOptions="Start">
+          <userControls:CustomLabel  VerticalOptions="CenterAndExpand" HorizontalOptions="Start" Text="Earthquake" FontFamilyName="Roboto-Light" TextColor="White" FontSize="18" FontAttributes="None" />
+        </Grid>
+      </Grid>
+    </Grid>
+
+    <Grid Grid.Row="0" RowSpacing="0" BackgroundColor="Transparent">
+      <Grid Padding="0,0,-5,0">
+        <xlabcontrols:ImageButton Text="" BackgroundColor="Transparent" FontSize="0" TextColor="#ffffff" HeightRequest="50" WidthRequest="50" Source="ic_keyboard_backspace_white_48dp.png" Command="{Binding BackCommand}" Orientation="ImageOnTop" ImageHeightRequest="70" ImageWidthRequest="70" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" />
+      </Grid>
+    </Grid>
+
+  </Grid>
+</ContentPage>

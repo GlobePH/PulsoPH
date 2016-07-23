@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PulsoPH.Client.Views.MainMapPage"
+             xmlns:userControls="clr-namespace:PulsoPH.Client.UserControls;assembly=PulsoPH.Client"
+             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:xlabcontrols="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms">
+  
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness">
+      <OnPlatform.iOS>
+        0, 20, 0, 0
+      </OnPlatform.iOS>
+      <OnPlatform.Android>
+        0, 0, 0, 0
+      </OnPlatform.Android>
+      <OnPlatform.WinPhone>
+        0, 0, 0, 0
+      </OnPlatform.WinPhone>
+    </OnPlatform>
+  </ContentPage.Padding>
+
+  <Grid RowSpacing="0">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+
+    <Grid Grid.Row="0" BackgroundColor="#E0F4C3" VerticalOptions="FillAndExpand" RowSpacing="0" Grid.RowSpan="3">
+      <maps:Map
+       x:Name="MyMap"
+       IsShowingUser="true"
+       MapType="Street" 
+        />
+    </Grid>
+
+    <Grid RowSpacing="0" BackgroundColor="Transparent">
+      <Grid Padding="0,0,-5,0">
+        <xlabcontrols:ImageButton Text="" BackgroundColor="Transparent" FontSize="0" TextColor="#ffffff" HeightRequest="50" WidthRequest="50" Source="ic_menu_white_48dp.png" Command="{Binding BackCommand}" Orientation="ImageOnTop" ImageHeightRequest="70" ImageWidthRequest="70" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" />
+      </Grid>
+    </Grid>
+
+    <Grid RowSpacing="2" BackgroundColor="Transparent">
+      <Grid Padding="0,20">
+        <xlabcontrols:ImageButton Text="" BackgroundColor="Transparent" FontSize="0" TextColor="#ffffff" HeightRequest="100" WidthRequest="100" Source="ic_pulsoph.png" Command="{Binding BackCommand}" Orientation="ImageOnTop" ImageHeightRequest="120" ImageWidthRequest="120" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+      </Grid>
+    </Grid>
+
+    <!--<Grid x:Name="gridIndicator" VerticalOptions="FillAndExpand" IsVisible="{Binding IsLoading}" BackgroundColor="#FFCC66" Grid.RowSpan="2">
+      <busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="ECG" Title="Registering your account..." TextColor="#DC5563" TextSize="32" ViewBoxWidth="100" ViewBoxHeight="100" HorizontalOptions="Fill" />
+    </Grid>-->
+  </Grid>
+
+</ContentPage>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <Jars></Jars>
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\GalaSoft.MvvmLight.Platform\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\ImageCircle.Forms.Plugin.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\Syncfusion.SfBusyIndicator.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\Xamarin.Auth\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\Xamarin.Bolts\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\Xamarin.Facebook\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Maps.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\XLabs.Forms.Droid\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\XLabs.Platform.Droid\library_project_imports\res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\GalaSoft.MvvmLight.Platform\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\ImageCircle.Forms.Plugin.Android\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\Xamarin.Auth\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\Xamarin.Bolts\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\Xamarin.Facebook\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Maps.Android\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\XLabs.Forms.Droid\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\XLabs.Platform.Droid\library_project_imports\assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
+  <ResolvedEnvironmentFiles />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\GalaSoft.MvvmLight.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\ImageCircle.Forms.Plugin.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\Syncfusion.SfBusyIndicator.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\Xamarin.Auth.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\Xamarin.Bolts.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\Xamarin.Facebook.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Maps.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\XLabs.Forms.Droid.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Mark-PC\Documents\Visual Studio 2015\Projects\PulsoPH.Client\PulsoPH.Client\PulsoPH.Client.Droid\obj\Debug\__library_projects__\XLabs.Platform.Droid.stamp</ResolvedResourceDirectoryStamp>
+  </ResolvedResourceDirectoryStamps>
+</Paths>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PulsoPH.Client.Views.RegistrationPage"
+               xmlns:userControls="clr-namespace:PulsoPH.Client.UserControls;assembly=PulsoPH.Client"
+             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             xmlns:xlabcontrols="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms">
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness">
+      <OnPlatform.iOS>
+        0, 20, 0, 0
+      </OnPlatform.iOS>
+      <OnPlatform.Android>
+        0, 0, 0, 0
+      </OnPlatform.Android>
+      <OnPlatform.WinPhone>
+        0, 0, 0, 0
+      </OnPlatform.WinPhone>
+    </OnPlatform>
+  </ContentPage.Padding>
+
+  <Grid RowSpacing="0">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+    <Grid Grid.Row="0" BackgroundColor="#E0F4C3" VerticalOptions="FillAndExpand" RowSpacing="0" Grid.RowSpan="2">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+
+      <Image Source="{Binding CurrentFacebookUserModel.picture_url}" Aspect="AspectFill"/>
+
+      <Grid VerticalOptions="Center" HorizontalOptions="End" Padding="20" Grid.RowSpan="2">
+        <Image Source="ic_pulsoph.png" Aspect="AspectFit" WidthRequest="100" HeightRequest="100"  />
+      </Grid>
+
+      <Grid Grid.Row="1" VerticalOptions="FillAndExpand" Padding="20">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackLayout>
+          <StackLayout>
+            <userControls:CustomLabel Text="Complete Profile" FontFamilyName="Roboto" TextColor="#FC5D53" FontSize="18" FontAttributes="None" VerticalOptions="Start" HorizontalOptions="StartAndExpand"/>
+            <userControls:CustomLabel Text="You're one step away in setting up your account. You may edit your information below on how you want people see you." FontFamilyName="Roboto" TextColor="#333333" FontSize="12" FontAttributes="None" VerticalOptions="Start" HorizontalOptions="StartAndExpand"/>
+          </StackLayout>
+
+          <StackLayout>
+            <userControls:CustomLabel Text="Fullname" FontFamilyName="Roboto" TextColor="#333333" FontSize="12" FontAttributes="None" VerticalOptions="Start" HorizontalOptions="StartAndExpand"/>
+            <userControls:CustomEntry x:Name="fullName" Placeholder="FullName" Text="{Binding CurrentFacebookUserModel.DisplayName}" FontSize="18" Grid.Column="1" FontFamilyName="Roboto-Light" TextColor="#333333" HintTextColor="#333333" VerticalOptions="Start" HorizontalTextAlignment="Start" />
+          </StackLayout>
+
+          <StackLayout>
+            <userControls:CustomLabel Text="Address" FontFamilyName="Roboto" TextColor="#333333" FontSize="12" FontAttributes="None" VerticalOptions="Start" HorizontalOptions="StartAndExpand"/>
+            <userControls:CustomEntry x:Name="entryAddress" Placeholder="Address" Text="{Binding CurrentFacebookUserModel.Address}" FontSize="18" Grid.Column="1" FontFamilyName="Roboto-Light" TextColor="#333333" HintTextColor="#333333" VerticalOptions="Start" HorizontalTextAlignment="Start" />
+          </StackLayout>
+          
+        </StackLayout>
+
+        <StackLayout Grid.Row="1">
+          <userControls:CustomButton x:Name="BtnRegister" Text="Sign Up" BorderRadius="0" FontFamilyName="Roboto-Light"  Clicked="BtnRegisterClicked" FontSize="14"  BackgroundColor="#FC5D53" Font="Medium" BorderWidth="1" HorizontalOptions="End"/>
+        </StackLayout>
+
+      </Grid>
+    </Grid>
+
+    <Grid RowSpacing="0" BackgroundColor="Transparent">
+      <Grid Padding="0,0,-5,0">
+        <xlabcontrols:ImageButton Text="" BackgroundColor="Transparent" FontSize="0" TextColor="#ffffff" HeightRequest="50" WidthRequest="50" Source="ic_keyboard_backspace_white_48dp.png" Command="{Binding BackCommand}" Orientation="ImageOnTop" ImageHeightRequest="70" ImageWidthRequest="70" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" />
+      </Grid>
+    </Grid>
+
+    <Grid x:Name="gridIndicator" VerticalOptions="FillAndExpand" IsVisible="{Binding IsLoading}" BackgroundColor="#FFCC66" Grid.RowSpan="2">
+      <busyindicator:SfBusyIndicator x:Name="busyindicator" AnimationType="ECG" Title="Registering your account..." TextColor="#DC5563" TextSize="32" ViewBoxWidth="100" ViewBoxHeight="100" HorizontalOptions="Fill" />
+    </Grid>
+  </Grid>
+</ContentPage>

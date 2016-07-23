@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PulsoPH.Client.Views.MasterPage"
+             Title="Master Page"
+             BackgroundColor="#FC5D53"
+             xmlns:userControls="clr-namespace:PulsoPH.Client.UserControls;assembly=PulsoPH.Client"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             xmlns:xlabcontrols="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             BindingContext="{Binding [MasterPageViewModel],Source={StaticResource ViewModelLocator} ">
+
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness">
+      <OnPlatform.iOS>
+        5, 20, 0, 0
+      </OnPlatform.iOS>
+      <OnPlatform.Android>
+        0, 0, 0, 0
+      </OnPlatform.Android>
+      <OnPlatform.WinPhone>
+        0, 0, 0, 0
+      </OnPlatform.WinPhone>
+    </OnPlatform>
+  </ContentPage.Padding>
+
+  <Grid RowSpacing="0" >
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+    <Grid VerticalOptions="Fill" x:Name="GridUserInfo">
+      <Image Source="{Binding PhotoUrl}" Aspect="AspectFill"/>
+
+      <Grid Padding="20">
+        <userControls:CustomLabel Text="PULSO" FontFamilyName="Roboto" TextColor="White" FontSize="18" FontAttributes="None" VerticalOptions="Start" HorizontalOptions="StartAndExpand"/>
+      </Grid>
+    </Grid>
+
+    <Grid RowSpacing="0" Grid.Row="1" Padding="20" Grid.RowSpan="2" VerticalOptions="StartAndExpand">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+        
+      <StackLayout Padding="0,2.5" Grid.Row="0" VerticalOptions="Fill">
+        <StackLayout Spacing="0" x:Name="StackLayoutInfo">
+          <StackLayout Orientation="Horizontal">
+            <userControls:CustomLabel Text="{Binding FirstName}" FontFamilyName="Roboto" TextColor="White" FontSize="18" FontAttributes="None" VerticalOptions="Start" HorizontalOptions="Start"/>
+            <userControls:CustomLabel Text="{Binding LastName}" FontFamilyName="Roboto" TextColor="White" FontSize="18" FontAttributes="None" VerticalOptions="Start" HorizontalOptions="Start"/>
+          </StackLayout>
+          <userControls:CustomLabel Text="{Binding Address}" FontFamilyName="Roboto" TextColor="White" FontSize="18" FontAttributes="None" VerticalOptions="Start" HorizontalOptions="StartAndExpand"/>
+        </StackLayout>
+
+        <ListView x:Name="appListView" Grid.Row="1" ItemsSource="{Binding AppGroupItems}" SelectedItem="{Binding SelectedAppGroupItem}" SeparatorVisibility="None" VerticalOptions="FillAndExpand">
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ViewCell>
+                <StackLayout Orientation="Horizontal" Padding="10,0">
+                  <controls:CircleImage Source="{Binding IconSource}" Aspect="AspectFit" BorderColor="White" BorderThickness="0"  HorizontalOptions="Start" VerticalOptions="Center"  WidthRequest="40" HeightRequest="40"/>
+                  <Grid Padding="10,0">
+                    <userControls:CustomLabel Text="{Binding Title}" FontFamilyName="Roboto-Light" TextColor="White" FontSize="14" FontAttributes="Bold" VerticalOptions="Center" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand"/>
+                  </Grid>
+                </StackLayout>
+              </ViewCell>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </StackLayout>
+    </Grid>
+
+
+
+  </Grid>
+
+</ContentPage>
