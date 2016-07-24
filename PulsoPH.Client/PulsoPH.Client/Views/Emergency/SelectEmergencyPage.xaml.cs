@@ -14,5 +14,10 @@ namespace PulsoPH.Client.Views.Emergency
 		{
 			InitializeComponent();
 		}
+
+		private async void BtnAddRainStormClicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new AddEmergencyRainPage());
+		}
 	}
 }

@@ -38,14 +38,14 @@ namespace PulsoPH.Client.Views
 			await Detail.Navigation.PopAsync();
 		}
 
-		private void Navigate(MasterPageViewModel sender)
+		private async void Navigate(MasterPageViewModel sender)
 		{
 			if (sender?.SelectedAppGroupItem != null)
 			{
 				if (!sender.IsNewLoad)
 				{
 					//Detail = (Page)Activator.CreateInstance(sender.SelectedAppGroupItem.TargetType);
-					Navigation.PushAsync((Page)Activator.CreateInstance(sender.SelectedAppGroupItem.TargetType));
+					await Navigation.PushAsync((Page)Activator.CreateInstance(sender.SelectedAppGroupItem.TargetType));
 				}
 
 				sender.IsNewLoad = false;

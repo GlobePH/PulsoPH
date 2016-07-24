@@ -21,8 +21,8 @@ namespace PulsoPH.Client
 		public App()
 		{
 			InitializeComponent();
-			//NavPage = new NavigationPage(new BaseContentLoginPage());
-			NavPage = new NavigationPage(new AddEmergencyRainPage());
+			NavPage = new NavigationPage(new BaseContentLoginPage());
+			//NavPage = new NavigationPage(new AddEmergencyRainPage());
 			MainPage = NavPage;
 		}
 

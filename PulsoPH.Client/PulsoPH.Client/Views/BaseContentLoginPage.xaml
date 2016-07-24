@@ -18,7 +18,7 @@
     <Image Source="basebackground.png" Aspect="AspectFill" Grid.RowSpan="4"/>
 
     <Grid  Grid.Row="2" Padding="20,0">
-        <xlabcontrols:ImageButton Text="Facebook" BackgroundColor="#3D5A98" FontSize="12" TextColor="White" Grid.Row="2"
+        <xlabcontrols:ImageButton Text="Login via Facebook" BackgroundColor="#3D5A98" FontSize="12" TextColor="White" Grid.Row="2"
                        HeightRequest="100" 
                        Source="ic_facebook.png" Command="{Binding LoginCommand}"
                        Orientation="ImageToLeft"

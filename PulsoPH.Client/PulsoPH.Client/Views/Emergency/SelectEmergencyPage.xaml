@@ -27,7 +27,6 @@
       <RowDefinition Height="Auto" />
       <RowDefinition Height="*" />
     </Grid.RowDefinitions>
-
     
     <Grid Grid.Row="0" Grid.RowSpan="2" VerticalOptions="FillAndExpand" RowSpacing="0" >
       <Grid.RowDefinitions>
@@ -44,7 +43,18 @@
         </Grid.ColumnDefinitions>
 
         <Grid VerticalOptions="Fill" HorizontalOptions="Fill" Padding="10">
-          <Image Source="ic_rain_heavy.png" HeightRequest="75" WidthRequest="75" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.RowSpan="4"/>
+          <!--<Image Source="ic_rainstorm.png" HeightRequest="75" WidthRequest="75" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.RowSpan="4"/>-->
+          <xlabcontrols:ImageButton Text="" BackgroundColor="Transparent"
+                                FontSize="0" TextColor="#ffffff"
+                                HeightRequest="80"
+                                WidthRequest="80"
+                                Source="ic_rainstorm.png"
+                                Clicked="BtnAddRainStormClicked"
+                                Orientation="ImageOnTop"
+                                ImageHeightRequest="100"
+                                ImageWidthRequest="100"
+                                HorizontalOptions="Center"
+                                VerticalOptions="CenterAndExpand" />
         </Grid>
         <Grid VerticalOptions="CenterAndExpand" Grid.Column="1" HorizontalOptions="Start">
           <userControls:CustomLabel  VerticalOptions="CenterAndExpand" HorizontalOptions="Start" Text="Rain Storm" FontFamilyName="Roboto-Light" TextColor="White" FontSize="18" FontAttributes="None" />
@@ -58,7 +68,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid VerticalOptions="Fill" HorizontalOptions="Fill" Padding="10">
-          <Image Source="ic_rain_heavy.png" HeightRequest="75" WidthRequest="75" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" Grid.RowSpan="4"/>
+          <Image Source="ic_fire.png" HeightRequest="75" WidthRequest="75" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" Grid.RowSpan="4"/>
         </Grid>
         <Grid VerticalOptions="CenterAndExpand" Grid.Column="1" HorizontalOptions="Start">
           <userControls:CustomLabel  VerticalOptions="CenterAndExpand" HorizontalOptions="Start" Text="Fire" FontFamilyName="Roboto-Light" TextColor="White" FontSize="18" FontAttributes="None" />
@@ -72,7 +82,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid VerticalOptions="Fill" HorizontalOptions="Fill" Padding="10">
-          <Image Source="ic_rain_heavy.png" HeightRequest="75" WidthRequest="75" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" Grid.RowSpan="4"/>
+          <Image Source="ic_flood.png" HeightRequest="75" WidthRequest="75" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" Grid.RowSpan="4"/>
         </Grid>
         <Grid VerticalOptions="CenterAndExpand" Grid.Column="1" HorizontalOptions="Start">
           <userControls:CustomLabel  VerticalOptions="CenterAndExpand" HorizontalOptions="Start" Text="Flood" FontFamilyName="Roboto-Light" TextColor="White" FontSize="18" FontAttributes="None" />
@@ -86,7 +96,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid VerticalOptions="Fill" HorizontalOptions="Fill" Padding="10">
-          <Image Source="ic_rain_heavy.png" HeightRequest="75" WidthRequest="75" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" Grid.RowSpan="4"/>
+          <Image Source="ic_earthquake.png" HeightRequest="75" WidthRequest="75" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" Grid.RowSpan="4"/>
         </Grid>
         <Grid VerticalOptions="CenterAndExpand" Grid.Column="1" HorizontalOptions="Start">
           <userControls:CustomLabel  VerticalOptions="CenterAndExpand" HorizontalOptions="Start" Text="Earthquake" FontFamilyName="Roboto-Light" TextColor="White" FontSize="18" FontAttributes="None" />
